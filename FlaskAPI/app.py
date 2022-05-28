@@ -1,7 +1,8 @@
 from flask import Flask, jsonify, request
 from all_variables import TeamName, Port
-
+from flask_cors import CORS
 app = Flask(__name__)
+CORS(app)
 
 #common variables
 team_name = TeamName()
